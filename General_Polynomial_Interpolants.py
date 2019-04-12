@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-#function that creates the vandermonde matrix to model an nth order polynomial interpolant
+#function that creates the vandermonde matrix to model an nth order polynomial interpolant. This could be generalized further, but this code was only intended to be used for the 3rd, 5th, and 15th order polynomials.
 def get_vandermonde(n,x):
     V = np.zeros((n+1)**2).reshape(n+1,n+1)
     for i in range(len(x)):
